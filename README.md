@@ -140,3 +140,46 @@ java-cp target/classes ui.Solution--alg astar--ss istra.txt--h istra_heuristic.t
 => 123_468_7x5 => 123_468_75x => 123_46x_758 => 123_4x6_758 => 123_456_7x8
 => 123_456_78x
 ```
+
+## Execution
+```bash
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss 3x3_puzzle.txt --alg bfs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss 3x3_puzzle.txt --alg ucs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --alg astar --h ai_fail.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --alg astar --h ai_pass.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --alg bfs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --h ai_fail.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --h ai_pass.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --h ai_fail.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --h ai_pass.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss ai.txt --alg ucs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --alg astar --h istra_heuristic.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --alg astar --h istra_pessimistic_heuristic.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --alg bfs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --h istra_pessimistic_heuristic.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --h istra_heuristic.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --h istra_pessimistic_heuristic.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --h istra_heuristic.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss istra.txt --alg ucs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --alg astar --h test_case_1_heuristic.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --alg bfs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --h test_case_1_heuristic.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --h test_case_1_heuristic_nonopt.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --h test_case_1_heuristic.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --h test_case_1_heuristic_nonopt.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_1.txt --alg ucs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --alg astar --h test_case_2_heuristic.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --alg bfs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --h test_case_2_heuristic.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --h test_case_2_heuristic.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_2.txt --alg ucs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --alg astar --h test_case_3_heuristic.txt
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --alg bfs
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --h test_case_3_heuristic.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --h test_case_3_heuristic_nonopt.txt --check-consistent 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --h test_case_3_heuristic.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --h test_case_3_heuristic_nonopt.txt --check-optimistic 
+java -cp target/classes -Dfile.encoding=UTF-8 ui.Solution --ss test_case_3.txt --alg ucs
+```
